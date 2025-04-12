@@ -1,6 +1,7 @@
 public class exercicios07 {
     public static void main(String[] args) {
 
+
         int num = 123;
         int c = num / 100;
         int d= (num / 10) % 10;
