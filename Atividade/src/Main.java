@@ -14,7 +14,9 @@ public class Main {
         while (estaAtivo) {
             System.out.println("Digite o que deseja:\n" +
                     "1 - Adicionar\n" +
-                    "2 - Remover\n");
+                    "2 - Remover\n" +
+                    "3 - alterar \n");
+
             entrada = s.nextLine();
 
 
@@ -57,6 +59,29 @@ public class Main {
                     }
                     }
                     break;
+
+                case "3":
+                    while (querContinuar) {
+                        System.out.println("Escreva o nome do item que deseja alterar");
+                        entrada = s.nextLine();
+                        listaProdutos.remove(entrada);
+                        System.out.println("Escreva o nome do item que deseja adicionar no seu lugar");
+                        entrada = s.nextLine();
+                        listaProdutos.add(entrada);
+
+
+                        System.out.println("O item " + entrada + " foi alterado  com sucesso! Deseja alterar mais? s/n");
+                        entrada = s.nextLine();
+
+
+                        if (entrada.equals("s")) {
+                            querContinuar = true;
+                        } else {
+                            querContinuar = false;
+                        }
+                        }
+                    break;
+
 
 
             }
