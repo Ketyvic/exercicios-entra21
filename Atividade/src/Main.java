@@ -40,6 +40,23 @@ public class Main {
                     break;
 
 
+                case "2":
+                    while (querContinuar) {
+                    System.out.println("Escreva o nome do item que deseja remover");
+                    listaProdutos.remove(entrada = s.nextLine());
+
+
+                    System.out.println("O item " + entrada + " foi removido com sucesso! Deseja remover mais? s/n");
+                    entrada = s.nextLine();
+
+
+                    if (entrada.equals("s")) {
+                        querContinuar = true;
+                    } else {
+                        querContinuar = false;
+                    }
+                    }
+                    break;
 
 
             }
