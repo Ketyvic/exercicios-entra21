@@ -15,7 +15,8 @@ public class Main {
             System.out.println("Digite o que deseja:\n" +
                     "1 - Adicionar\n" +
                     "2 - Remover\n" +
-                    "3 - alterar \n");
+                    "3 - alterar \n"+
+                    "4 - listar \n");
 
             entrada = s.nextLine();
 
@@ -82,6 +83,9 @@ public class Main {
                         }
                     break;
 
+                case "4":
+                    System.out.println(listaProdutos);
+                    break;
 
 
             }
