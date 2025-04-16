@@ -16,7 +16,8 @@ public class Main {
                     "1 - Adicionar\n" +
                     "2 - Remover\n" +
                     "3 - alterar \n"+
-                    "4 - listar \n");
+                    "4 - listar \n"+
+                    "x - finalizar o programa");
 
             entrada = s.nextLine();
 
@@ -86,6 +87,14 @@ public class Main {
                 case "4":
                     System.out.println(listaProdutos);
                     break;
+
+
+                case "x":
+                    System.out.println("Finalizando o programa...");
+                    estaAtivo = false;
+                    break;
+
+
 
 
             }
